@@ -69,19 +69,19 @@ class BuildAssetsController extends Controller
         \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
         $request = Yii::$app->request;
 
-        $pass = '1';
+        $pass = 'test';
 
-        $user = '2';
+        $user = 'test';
 
-       echo  $app_id = $request->post('app_id');
+        $app_id = $request->post('app_id');
 
-       echo $this->verison = $request->post('v');
+        $this->verison = $request->post('v');
 
-       echo $token = $request->post('token');
+        $token = $request->post('token');
 
         $this->api_name = '';
 
-        echo $access = md5($app_id . $this->verison . date('h:i') . $pass . $user);
+        $access = md5($app_id . $this->verison . date('h:i') . $pass . $user);
 
         switch ($app_id) {
             case "1":
