@@ -1,4 +1,4 @@
-# Yii2_minify_decrypt
+# Yii2_minify
 Minify
 1: Config 
 Project/config/web.php add:
